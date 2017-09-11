@@ -26,7 +26,7 @@ export class InformacionService {
     // console.log('carga sobre nosotros');
     this.http.get("https://paginaweb-dde1c.firebaseio.com/equipo.json")
         .subscribe( data =>{
-          console.log(data.json());
+          // console.log(data.json());
           this.cargada_sobre_nosotros = true;
           this.equipo=data.json();
         })
