@@ -23,7 +23,7 @@ export class InformacionService {
   }
 
   public carga_sobre_nosotros(){
-    console.log('carga sobre nosotros');
+    // console.log('carga sobre nosotros');
     this.http.get("https://paginaweb-dde1c.firebaseio.com/equipo.json")
         .subscribe( data =>{
           console.log(data.json());
